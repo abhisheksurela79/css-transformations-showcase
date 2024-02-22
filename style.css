@@ -2,7 +2,7 @@
 
 
 body {
-    background-color: #1e1e1e;
+    background-color: #21232b;
 }
 
 h1 {
@@ -11,6 +11,7 @@ h1 {
     font-weight: 700;
     color: #FFF;
     text-align: center;
+    padding: 0 10%;
 }
 
 .wrap {
@@ -200,3 +201,33 @@ h1 {
     transform: rotate3d(3, 2, 2, 90deg) translateZ(50px);
 
 }
+
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .box {
+      width: calc(33.33% - 20px);
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .box {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media only screen and (max-width: 360px) {
+    .box {
+      width: calc(100% - 19px);
+    }
+  }
+  
+  /* Adjust other styles as needed for smaller screens */
+  
